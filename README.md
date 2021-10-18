@@ -32,9 +32,13 @@ Or manually update `require` block of `composer.json` and run `composer update`.
 
 ## Using
 ```php
-use DeDmytro\Pexels\PhotoApiClient;
+use DeDmytro\Pexels\Clients\PhotoApiClient;
+use DeDmytro\Pexels\Facades\Pexels;
 
-$client = new PhotoApiClient();
+$client = new PhotoApiClient(); // Good for controller method/artisan command handle()/job handle() dependency injection
+// OR
+$client = Pexels::photos(); 
+
 $response = $client->search('cats');
 
 foreach ($response->photos as $photo){

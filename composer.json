@@ -49,7 +49,10 @@
         "laravel": {
             "providers": [
                 "DeDmytro\\Pexels\\PexelsServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Pexels": "DeDmytro\\Pexels\\Facades\\Pexels"
+            }
         }
     }
 }

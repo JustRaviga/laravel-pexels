@@ -1,12 +1,13 @@
 <?php
 
-namespace DeDmytro\Pexels;
+namespace DeDmytro\Pexels\Clients;
 
 use DeDmytro\Pexels\Entities\PhotosSearchResponse;
 use DeDmytro\Pexels\Exceptions\NoPexelsApiKeyProvided;
+use DeDmytro\Pexels\SearchOptions;
 use Illuminate\Http\Client\PendingRequest;
-use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
+use Throwable;
 
 class PhotoApiClient
 {
@@ -24,7 +25,7 @@ class PhotoApiClient
 
     /**
      * ApiClient constructor
-     * @throws \Throwable
+     * @throws Throwable
      */
     public function __construct()
     {
