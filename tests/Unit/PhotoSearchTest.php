@@ -2,8 +2,8 @@
 
 namespace Tests\Unit;
 
-use DeDmytro\Pexels\Entities\PhotosSearchResponse;
-use DeDmytro\Pexels\Facades\Pexels;
+use JustRaviga\Pexels\Entities\PhotosSearchResponse;
+use JustRaviga\Pexels\Facades\Pexels;
 use Tests\TestCase;
 
 class PhotoSearchTest extends TestCase

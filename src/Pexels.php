@@ -1,8 +1,8 @@
 <?php
 
-namespace DeDmytro\Pexels;
+namespace JustRaviga\Pexels;
 
-use DeDmytro\Pexels\Clients\PhotoApiClient;
+use JustRaviga\Pexels\Clients\PhotoApiClient;
 
 class Pexels
 {

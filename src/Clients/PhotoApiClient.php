@@ -1,10 +1,10 @@
 <?php
 
-namespace DeDmytro\Pexels\Clients;
+namespace JustRaviga\Pexels\Clients;
 
-use DeDmytro\Pexels\Entities\PhotosSearchResponse;
-use DeDmytro\Pexels\Exceptions\NoPexelsApiKeyProvided;
-use DeDmytro\Pexels\SearchOptions;
+use JustRaviga\Pexels\Entities\PhotosSearchResponse;
+use JustRaviga\Pexels\Exceptions\NoPexelsApiKeyProvided;
+use JustRaviga\Pexels\SearchOptions;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 use Throwable;

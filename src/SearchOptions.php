@@ -1,6 +1,6 @@
 <?php
 
-namespace DeDmytro\Pexels;
+namespace JustRaviga\Pexels;
 
 use Illuminate\Contracts\Support\Arrayable;
 

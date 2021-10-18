@@ -1,6 +1,6 @@
 <?php
 
-namespace DeDmytro\Pexels\Entities;
+namespace JustRaviga\Pexels\Entities;
 
 use Closure;
 use Illuminate\Database\Query\Expression;
