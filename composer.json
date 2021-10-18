@@ -48,7 +48,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "PexelsServiceProvider"
+                "DeDmytro\\Pexels\\PexelsServiceProvider"
             ]
         }
     }
