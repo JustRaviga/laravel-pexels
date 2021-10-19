@@ -44,10 +44,13 @@ class PhotoApiClient
      */
     public function search(string $searchQuery, SearchOptions $options = null)
     {
-        $array = $this->httpClient->get('search', array_merge([
-            'query' => $searchQuery,
-            $options ? $options->toArray() : []
-        ]))->json();
+        $array = $this->httpClient->get(
+            'search',
+            array_merge(
+                ['query' => $searchQuery],
+                $options ? $options->toArray() : with(new SearchOptions())->toArray()
+            )
+        )->json();
 
         return PhotosSearchResponse::fromArray($array);
     }
