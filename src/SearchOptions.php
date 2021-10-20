@@ -24,49 +24,61 @@ class SearchOptions implements Arrayable
     /**
      * Set page size
      * @param int $perPage
+     * @return self
      */
     public function perPage(int $perPage){
         $this->perPage = $perPage;
+        return $this;
     }
 
     /**
-     * Set currect page
+     * Set current page
      * @param int $page
+     * @return self
      */
     public function page(int $page){
         $this->page = $page;
+        return $this;
     }
 
     /**
      * Set photo size
      * @param string $size
+     * @return self
      */
     public function size(string $size){
         $this->size = $size;
+        return $this;
     }
 
     /**
      * Set results color
      * @param string $color
+     * @return self
      */
     public function color(string $color){
         $this->color = $color;
+        return $this;
     }
 
     /**
      * Set results locale
      * @param string $locale
+     * @return self
      */
     public function locale(string $locale){
         $this->locale = $locale;
+        return $this;
     }
 
     /**
      * Set results orientation
      * @param string $orientation
+     * @return self
      */
     public function orientation(string $orientation){
         $this->orientation = $orientation;
+        return $this;
     }
 
     /**
