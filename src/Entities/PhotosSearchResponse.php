@@ -14,7 +14,7 @@ class PhotosSearchResponse implements Arrayable
      * @var array|Photo[]
      */
     public array $photos;
-    public string $nextPage;
+    public ?string $nextPage;
 
     /**
      * Response constructor
@@ -24,7 +24,7 @@ class PhotosSearchResponse implements Arrayable
      * @param array $photos
      * @param string $nextPage
      */
-    public function __construct(int $totalResults, int $page, int $perPage, array $photos, string $nextPage)
+    public function __construct(int $totalResults, int $page, int $perPage, array $photos, ?string $nextPage)
     {
         $this->totalResults = $totalResults;
         $this->page = $page;
