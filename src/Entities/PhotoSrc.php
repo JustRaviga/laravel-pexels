@@ -1,6 +1,6 @@
 <?php
 
-namespace DeDmytro\Pexels\Entities;
+namespace JustRaviga\Pexels\Entities;
 
 use Illuminate\Support\Arr;
 

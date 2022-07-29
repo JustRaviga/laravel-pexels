@@ -1,5 +1,5 @@
 {
-    "name": "dedmytro/laravel-pexels",
+    "name": "justraviga/laravel-pexels",
     "description": "Pexels API client for Laravel",
     "type": "library",
     "license": "MIT",
@@ -16,8 +16,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/DeDmytro/laravel-pexels/issues",
-        "source": "https://github.com/DeDmytro/laravel-pexels"
+        "issues": "https://github.com/JustRaviga/laravel-pexels/issues",
+        "source": "https://github.com/JustRaviga/laravel-pexels"
     },
     "require": {
         "php": "^7.4|^8.0",
@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DeDmytro\\Pexels\\": "src"
+            "JustRaviga\\Pexels\\": "src"
         }
     },
     "autoload-dev": {
@@ -48,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DeDmytro\\Pexels\\PexelsServiceProvider"
+                "JustRaviga\\Pexels\\PexelsServiceProvider"
             ],
             "aliases": {
-                "Pexels": "DeDmytro\\Pexels\\Facades\\Pexels"
+                "Pexels": "JustRaviga\\Pexels\\Facades\\Pexels"
             }
         }
     }

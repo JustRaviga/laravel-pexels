@@ -1,10 +1,10 @@
 <?php
 
-namespace DeDmytro\Pexels\Clients;
+namespace JustRaviga\Pexels\Clients;
 
-use DeDmytro\Pexels\Entities\PhotosSearchResponse;
-use DeDmytro\Pexels\Exceptions\NoPexelsApiKeyProvided;
-use DeDmytro\Pexels\SearchOptions;
+use JustRaviga\Pexels\Entities\PhotosSearchResponse;
+use JustRaviga\Pexels\Exceptions\NoPexelsApiKeyProvided;
+use JustRaviga\Pexels\SearchOptions;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 use Throwable;
@@ -44,10 +44,13 @@ class PhotoApiClient
      */
     public function search(string $searchQuery, SearchOptions $options = null)
     {
-        $array = $this->httpClient->get('search', array_merge([
-            'query' => $searchQuery,
-            $options ? $options->toArray() : []
-        ]))->json();
+        $array = $this->httpClient->get(
+            'search',
+            array_merge(
+                ['query' => $searchQuery],
+                $options ? $options->toArray() : with(new SearchOptions())->toArray()
+            )
+        )->json();
 
         return PhotosSearchResponse::fromArray($array);
     }

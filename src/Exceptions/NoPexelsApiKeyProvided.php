@@ -1,8 +1,8 @@
 <?php
 
-namespace DeDmytro\Pexels\Exceptions;
+namespace JustRaviga\Pexels\Exceptions;
 
-use DeDmytro\Pexels\Photo;
+use JustRaviga\Pexels\Photo;
 use Throwable;
 
 class NoPexelsApiKeyProvided extends \Exception

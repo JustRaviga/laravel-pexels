@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use DeDmytro\Pexels\PexelsServiceProvider;
+use JustRaviga\Pexels\PexelsServiceProvider;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 

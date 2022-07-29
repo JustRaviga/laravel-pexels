@@ -1,8 +1,8 @@
 <?php
 
-namespace DeDmytro\Pexels\Facades;
+namespace JustRaviga\Pexels\Facades;
 
-use DeDmytro\Pexels\Clients\PhotoApiClient;
+use JustRaviga\Pexels\Clients\PhotoApiClient;
 use Illuminate\Support\Facades\Facade;
 
 /**
