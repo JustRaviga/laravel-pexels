@@ -6,7 +6,7 @@ use Illuminate\Support\Arr;
 
 class PhotoSrc
 {
-    public ?string $origin;
+    public ?string $original;
     public ?string $large2x;
     public ?string $large;
     public ?string $medium;
@@ -17,7 +17,7 @@ class PhotoSrc
 
     /**
      * PhotoSrc construct
-     * @param string|null $origin
+     * @param string|null $original
      * @param string|null $large2x
      * @param string|null $large
      * @param string|null $medium
@@ -27,7 +27,7 @@ class PhotoSrc
      * @param string|null $landscape
      */
     public function __construct(
-        ?string $origin,
+        ?string $original,
         ?string $large2x,
         ?string $large,
         ?string $medium,
@@ -36,7 +36,7 @@ class PhotoSrc
         ?string $portrait,
         ?string $landscape
     ) {
-        $this->origin = $origin;
+        $this->original = $original;
         $this->large2x = $large2x;
         $this->large = $large;
         $this->medium = $medium;
@@ -53,7 +53,7 @@ class PhotoSrc
      */
     public static function fromArray($array){
         return new self(
-            Arr::get($array,'origin'),
+            Arr::get($array,'original'),
             Arr::get($array,'large2x'),
             Arr::get($array,'large'),
             Arr::get($array,'medium'),
